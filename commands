@@ -1,0 +1,3 @@
+
+run ads-b: ~/dump1090/dump1090 --interactive --gain -10 --net --net-beast
+log data: nc 127.0.0.1 30003 | egrep --line-buffered 'MSG,1,|MSG,3,|MSG,5,' >> /home/pi/Desktop/flight_tracks_1.csv
